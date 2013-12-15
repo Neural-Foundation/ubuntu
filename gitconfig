@@ -1,0 +1,26 @@
+[user]
+    name = 徐晨阳
+    email = xuender@gmail.com
+[core]
+    excludesfile = ~/.gitignore
+[alias]
+    st = status
+    co = checkout
+    cm = commit
+    pom = push origin master
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+    df = difftool
+[color]
+	ui = true
+[push]
+#	default = simple
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = No
+[merge]
+	tool = vimdiff
+[mergetool]
+	prompt = false
+[push]
+	default = simple
