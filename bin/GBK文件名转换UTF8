@@ -1,0 +1,7 @@
+#!/bin/bash
+while [ $# -gt 0 ]
+do
+convmv -f cp936 -t utf8 -r --notest "$1"| zenity --progress --pulsate --text="转换进度" --auto-close
+shift
+done
+exit 0
