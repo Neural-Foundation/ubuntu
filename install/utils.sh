@@ -7,3 +7,5 @@
 #
 #!/bin/bash
 sudo aptitude install -y indicator-multiload vim-gnome retext zim virtualbox
+# 截屏
+sudo aptitude install -y shutter libgoo-canvas-perl

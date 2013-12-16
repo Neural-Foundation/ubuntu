@@ -6,7 +6,6 @@
 # Distributed under terms of the MIT license.
 #
 
-
 sudo aptitude remove ibus
 sudo aptitude remove fcitx*
 sudo apt-get autoremove
