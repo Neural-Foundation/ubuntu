@@ -7,6 +7,7 @@
 #
 
 
+sudo aptitude install -y ipython
 sudo aptitude install -y python-pip
 sudo pip install bencode
 sudo pip install watchdog
