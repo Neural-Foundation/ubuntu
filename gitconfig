@@ -3,6 +3,7 @@
     email = xuender@gmail.com
 [core]
     excludesfile = ~/.gitignore
+	quotepath = false
 [alias]
     st = status
     co = checkout
