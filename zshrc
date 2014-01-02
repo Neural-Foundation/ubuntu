@@ -76,4 +76,5 @@ echo 'run byobu'
 
 export MIGRATIONS_HOME=/home/ender/work/mybatis-migrations-3.1.0
 export MIGRATIONS=$MIGRATIONS_HOME/bin
-export PATH=$MIGRATIONS:$PATH
+export ANDROID_HOME=/home/ender/utils/android_sdk
+export PATH=$MIGRATIONS:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
