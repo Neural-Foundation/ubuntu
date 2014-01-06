@@ -57,6 +57,7 @@ alias grep='grep --color=auto'
 alias ee='emacsclient -t'
 alias dstat='dstat -cdlmnpsy'
 alias rscp='rsync -v -P -e ssh'
+alias b='byobu'
 
 # Vi风格键绑定
 bindkey -v
@@ -72,7 +73,7 @@ compinit
 
 . ~/.nvm/nvm.sh
 
-echo 'run byobu'
+echo 'run byobu(b)'
 
 export MIGRATIONS_HOME=/home/ender/work/mybatis-migrations-3.1.0
 export MIGRATIONS=$MIGRATIONS_HOME/bin
