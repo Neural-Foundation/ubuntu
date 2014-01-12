@@ -1,3 +1,3 @@
 #!/bin/bash
-sudo apt-get install aptitude
-sudo aptitude install git byobu ssh
+sudo apt-get install -y aptitude
+sudo aptitude install -y git byobu ssh

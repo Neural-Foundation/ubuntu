@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Android Studio (Preview) 0.4.0
+Icon=jetbrains-android-studio.png
+Path=/home/ender/utils/android-studio/bin
+Exec=/home/ender/utils/android-studio/bin/studio.sh
+Terminal=false
+StartupNotify=false
+OnlyShowIn=Unity;
+X-UnityGenerated=true
+Categories=Utility;Application

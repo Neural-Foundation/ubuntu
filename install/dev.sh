@@ -7,4 +7,5 @@
 #
 sudo aptitude install -y subversion vim-gnome
 ln -s /home/ender/work/ubuntu/gitconfig ~/.gitconfig
+ln -s /home/ender/work/ubuntu/gitignore ~/.gitignore
 sudo aptitude install -y build-essential linux-headers-`uname -r`
