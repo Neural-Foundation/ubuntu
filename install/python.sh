@@ -16,6 +16,7 @@ sudo pip install pyquery
 sudo pip install path.py
 sudo pip install Django
 sudo pip install south
+sudo pip install ipdb
 # Postgresql
 sudo pip install psycopy2
 #sudo pip install stratum
