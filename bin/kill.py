@@ -45,7 +45,7 @@ def main():
                 log.info('进程关闭成功.')
                 return
         if findId(id):
-            log.error('关闭失败,尝试使用kill 9 %s'%id)
+            log.error('关闭失败,尝试使用kill -9 %s'%id)
         else:
             log.info('使用kill 1 成功.')
 
