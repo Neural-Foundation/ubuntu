@@ -59,6 +59,7 @@ alias dstat='dstat -cdlmnpsy'
 alias rscp='rsync -v -P -e ssh'
 alias b='byobu'
 alias p='ping 192.168.1.1'
+alias e='exit'
 
 # Vi风格键绑定
 bindkey -v
@@ -75,7 +76,8 @@ compinit
 . ~/.nvm/nvm.sh
 
 echo 'run byobu(b)'
-echo 'run ping 192.168.1.1(p)'
+echo 'p=ping 192.168.1.1'
+echo 'e=exit'
 
 export JAVA_HOME=/usr/lib/jvm/java-7-oracle
 
