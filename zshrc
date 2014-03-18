@@ -83,4 +83,4 @@ export MIGRATIONS_HOME=/home/ender/work/mybatis-migrations-3.1.0
 export MIGRATIONS=$MIGRATIONS_HOME/bin
 export ANDROID_HOME=/home/ender/utils/android_sdk
 export PATH=$MIGRATIONS:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
-export PHANTOMJS_BIN=/home/ender/.nvm/v0.10.23/bin/phantomjs
+export PHANTOMJS_BIN=/home/ender/.nvm/v0.10.26/bin/phantomjs
