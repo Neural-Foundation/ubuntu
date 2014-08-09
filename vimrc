@@ -21,6 +21,7 @@ NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'thisivan/vim-taglist'
 NeoBundle 'clones/vim-genutils'
+NeoBundle 'tfnico/vim-gradle'
 NeoBundle 'xuender/vim-template'
 NeoBundleCheck
 

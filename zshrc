@@ -44,7 +44,7 @@ ZSH_THEME="jonathan"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-
+source $HOME/.gvm/scripts/gvm
 # Customize to your needs...
 export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 #命令别名
@@ -84,5 +84,12 @@ export JAVA_HOME=/usr/lib/jvm/java-7-oracle
 export MIGRATIONS_HOME=/home/ender/work/mybatis-migrations-3.1.0
 export MIGRATIONS=$MIGRATIONS_HOME/bin
 export ANDROID_HOME=/home/ender/utils/android_sdk
-export PATH=$MIGRATIONS:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 export PHANTOMJS_BIN=/home/ender/.nvm/v0.10.26/bin/phantomjs
+export GRADLE_HOME=/home/ender/utils/gradle-1.11
+export PATH=$GRADLE_HOME/bin:$MIGRATIONS:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
+
+# 安卓开发
+export KEYSTORE=~/work/ab/keystore/android.keystore
+export KEYSTORE_PASSWORD=xcyqq100200
+export KEY_ALIAS=ender_android
+export KEY_PASSWORD=qq100200xcy
