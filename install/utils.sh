@@ -10,4 +10,4 @@ sudo aptitude install -y indicator-multiload vim-gnome retext zim virtualbox-qt
 # 截屏
 sudo aptitude install -y shutter libgoo-canvas-perl
 sudo aptitude install -y filezilla
-sudo aptitude install -y unrar
+#sudo aptitude install -y unrar
