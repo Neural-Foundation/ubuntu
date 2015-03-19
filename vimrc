@@ -11,6 +11,7 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'kien/ctrlp.vim'
+"NeoBundle 'othree/xml'
 NeoBundle 'othree/html5.vim'
 NeoBundle 'vim-scripts/lookupfile'
 "NeoBundle 'klen/python-mode'
@@ -21,13 +22,17 @@ NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'thisivan/vim-taglist'
 NeoBundle 'clones/vim-genutils'
-NeoBundle 'tfnico/vim-gradle'
+NeoBundle 'mattn/gist-vim', {'depends': 'mattn/webapi-vim'}
 NeoBundle 'xuender/vim-template'
 NeoBundleCheck
 
 filetype off
 
 filetype plugin indent on     " Required!
+
+" 自动换行对齐
+"set autoindent 
+"set smartindent
 " Installation check.
 
 " 历史记录数量
@@ -683,8 +688,8 @@ au BufWritePost *.mxml ! fmake.py <afile>
 au BufWritePost .vimrc source ~/.vimrc
 
 "显示TAB字符为<+++
-"set list
-"set list listchars=tab:<+
+set list
+set list listchars=tab:<+
 
 "输入法扩展文件
 let g:vimim_privates_txt="/home/ender/.vim/plugin/ender.txt"

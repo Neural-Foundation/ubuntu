@@ -13,8 +13,6 @@
     df = difftool
 [color]
 	ui = true
-[push]
-#	default = simple
 [diff]
 	tool = vimdiff
 [difftool]
@@ -25,3 +23,5 @@
 	prompt = false
 [push]
 	default = simple
+[github]
+	user = xuender
