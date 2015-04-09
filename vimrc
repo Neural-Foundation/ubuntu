@@ -23,6 +23,14 @@ NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'thisivan/vim-taglist'
 NeoBundle 'clones/vim-genutils'
 NeoBundle 'mattn/gist-vim', {'depends': 'mattn/webapi-vim'}
+" 实现在代码中的跳转，从函数调用的地方，直接跳转到函数的定义。默认的命令是：gd
+" NeoBundle 'dgryski/vim-godef'
+" 实现Golang的代码自动补全
+" NeoBundle 'Blackrush/vim-gocode'
+" 这个用来配合vim的tagbar，查看方便的生成和查看文件中的各种方法，并进行跳转
+NeoBundle 'majutsushi/tagbar'
+" 整套的 Golang Vim 开发配置
+NeoBundle 'fatih/vim-go'
 NeoBundle 'xuender/vim-template'
 NeoBundleCheck
 
@@ -741,3 +749,42 @@ highlight link multiple_cursors_visual Visual
 " template
 let g:email='xuender@gmail.com'
 let g:username='ender xu'
+
+" golang
+au FileType go nmap <leader>r <Plug>(go-run)
+" 跳转到方法定义位置横向开窗口
+au FileType go nmap <Leader>gs <Plug>(go-def-split)
+" 跳转到方法定义位置纵向向开窗口
+au FileType go nmap <Leader>gv <Plug>(go-def-vertical)
+" 和gd相同 是跳转到方法定义位置
+au FileType go nmap <Leader>gt <Plug>(go-def-tab)
+" go doc
+au FileType go nmap <Leader>gd <Plug>(go-doc)
+nmap <leader>t :TagbarToggle<CR>
+let g:tagbar_type_go = {
+    \ 'ctagstype' : 'go',
+    \ 'kinds'     : [
+        \ 'p:package',
+        \ 'i:imports:1',
+        \ 'c:constants',
+        \ 'v:variables',
+        \ 't:types',
+        \ 'n:interfaces',
+        \ 'w:fields',
+        \ 'e:embedded',
+        \ 'm:methods',
+        \ 'r:constructor',
+        \ 'f:functions'
+    \ ],
+    \ 'sro' : '.',
+    \ 'kind2scope' : {
+        \ 't' : 'ctype',
+        \ 'n' : 'ntype'
+    \ },
+    \ 'scope2kind' : {
+        \ 'ctype' : 't',
+        \ 'ntype' : 'n'
+    \ },
+    \ 'ctagsbin'  : 'gotags',
+    \ 'ctagsargs' : '-sort -silent'
+\ }
