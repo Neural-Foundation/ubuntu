@@ -751,6 +751,8 @@ let g:email='xuender@gmail.com'
 let g:username='ender xu'
 
 " golang
+" 代码补全引擎是 ultisnips
+let g:go_snippet_engine = "neosnippet"
 au FileType go nmap <leader>r <Plug>(go-run)
 " 跳转到方法定义位置横向开窗口
 au FileType go nmap <Leader>gs <Plug>(go-def-split)
