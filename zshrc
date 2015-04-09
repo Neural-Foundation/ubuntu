@@ -88,8 +88,3 @@ export PHANTOMJS_BIN=/home/ender/.nvm/v0.10.26/bin/phantomjs
 export GRADLE_HOME=/home/ender/utils/gradle-1.11
 export PATH=$GRADLE_HOME/bin:$MIGRATIONS:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 
-# 安卓开发
-export KEYSTORE=~/work/ab/keystore/android.keystore
-export KEYSTORE_PASSWORD=xcyqq100200
-export KEY_ALIAS=ender_android
-export KEY_PASSWORD=qq100200xcy
