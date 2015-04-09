@@ -688,8 +688,8 @@ au BufWritePost *.mxml ! fmake.py <afile>
 au BufWritePost .vimrc source ~/.vimrc
 
 "显示TAB字符为<+++
-set list
-set list listchars=tab:<+
+" set list
+" set list listchars=tab:<+
 
 "输入法扩展文件
 let g:vimim_privates_txt="/home/ender/.vim/plugin/ender.txt"
