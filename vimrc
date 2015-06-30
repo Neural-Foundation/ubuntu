@@ -424,7 +424,7 @@ map <leader>y :YRShow<cr>
 """"""""""""""""""""""""""""""
 " Tag list (ctags) - not used
 """"""""""""""""""""""""""""""
-let Tlist_Ctags_Cmd = "/usr/bin/ctags-exuberant"
+"let Tlist_Ctags_Cmd = "/usr/bin/ctags-exuberant"
 let Tlist_Sort_Type = "name"
 let Tlist_Show_Menu = 1
 "不同时显示多个文件的tag，只显示当前文件的

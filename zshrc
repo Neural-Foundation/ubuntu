@@ -88,3 +88,4 @@ export PHANTOMJS_BIN=/home/ender/.nvm/v0.10.26/bin/phantomjs
 export GRADLE_HOME=/home/ender/utils/gradle-1.11
 export PATH=$GRADLE_HOME/bin:$MIGRATIONS:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 
+export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/dist
