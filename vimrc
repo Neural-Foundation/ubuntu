@@ -1,20 +1,49 @@
 " xuender@gmail.com
 " 2015-04-09
 
-if has('vim_starting')
+"NeoBundle Scripts-----------------------------
+if &compatible
   set nocompatible               " Be iMproved
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-call neobundle#rc(expand('~/.vim/bundle/'))
- " Let NeoBundle manage NeoBundle
+" Required:
+set runtimepath^=/home/ender/.vim/bundle/neobundle.vim/
+
+" Required:
+call neobundle#begin(expand('/home/ender/.vim/bundle'))
+
+" Let NeoBundle manage NeoBundle
+" Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
+
+" Add or remove your Bundles here:
+NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'Shougo/vimproc.vim', {
+\ 'build' : {
+\     'windows' : 'tools\\update-dll-mingw',
+\     'cygwin' : 'make -f make_cygwin.mak',
+\     'mac' : 'make -f make_mac.mak',
+\     'linux' : 'make',
+\     'unix' : 'gmake',
+\    },
+\ }
+NeoBundle 'Quramy/tsuquyomi'
+
+" You can specify revision/branch/tag.
+NeoBundle 'leafgarland/typescript-vim'
+" NeoBundle 'HerringtonDarkholme/yats.vim'
+
+NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'kien/ctrlp.vim'
-"NeoBundle 'othree/xml'
+" NeoBundle 'othree/xml'
 NeoBundle 'othree/html5.vim'
 NeoBundle 'vim-scripts/lookupfile'
-"NeoBundle 'klen/python-mode'
+NeoBundle 'klen/python-mode'
 NeoBundle 'bolasblack/vimcdoc'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'jnwhiteh/vim-golang'
@@ -32,11 +61,19 @@ NeoBundle 'majutsushi/tagbar'
 " 整套的 Golang Vim 开发配置
 NeoBundle 'fatih/vim-go'
 NeoBundle 'xuender/vim-template'
+" Required:
+call neobundle#end()
+
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
 NeoBundleCheck
+"End NeoBundle Scripts-------------------------
 
 filetype off
 
-filetype plugin indent on     " Required!
 
 " 自动换行对齐
 "set autoindent 
@@ -442,6 +479,9 @@ let Tlist_Use_SingleClick=1
 "nnoremap <silent> <F8> :TlistToggle<CR>
 map <leader>r :TlistToggle<CR>
 map <leader>t :Tlist<cr>
+" 上下移动当前行
+nnoremap <silent> <leader>j :silent! m .+1<cr>==
+nnoremap <silent> <leader>k :silent! m .-2<cr>==
 
 
 """"""""""""""""""""""""""""""
@@ -684,7 +724,7 @@ endfunction
 
 
 " Python 文件的一般设置，比如不要 tab 等
-autocmd FileType python setlocal et | setlocal sta | setlocal sw=4
+autocmd FileType python setlocal et | setlocal sta | setlocal sw=2
 " 代码自动补全 用 Ctrl-N 调用
 autocmd FileType python set complete+=k~/.vim/pydiction isk+=.,(
 "回到上次文件打开所在行
@@ -749,6 +789,11 @@ highlight link multiple_cursors_visual Visual
 " template
 let g:email='xuender@gmail.com'
 let g:username='ender xu'
+
+" typeScript
+let g:typescript_indent_disable = 1
+autocmd QuickFixCmdPost [^l]* nested cwindow
+autocmd QuickFixCmdPost    l* nested lwindow
 
 " golang
 " 代码补全引擎是 ultisnips
