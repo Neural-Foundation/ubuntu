@@ -1,0 +1,12 @@
+#!/bin/bash
+#@author wiki xuender@gmail.com
+for FileOrDir 
+do
+	if [ -f "$FileOrDir" ]; 	   then
+    iconv -f gbk -t utf8 "$FileOrDir" > "/tmp/$FileOrDir"
+    cp "/tmp/$FileOrDir" "$FileOrDir"
+	elif [ -d "$FileOrDir" ];	then
+		zenity --error --text='目录 [ $FileOrDir ] 不能进行编码转换' --title "错误提醒"
+	fi
+done
+notify-send "编码转换完毕!"

@@ -1,0 +1,8 @@
+#!/bin/bash
+#@author wiki xuender@gmail.com
+
+for FileOrDir 
+do
+  tar -cvf "$FileOrDir.tar" "$FileOrDir"
+done
+notify-send "打包完毕"
