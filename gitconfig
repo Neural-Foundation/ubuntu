@@ -11,12 +11,13 @@
     pom = push origin master
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
     df = difftool
+    mf = merge --no-ff
 [color]
 	ui = true
 [diff]
 	tool = vimdiff
 [difftool]
-	prompt = No
+	prompt = false
 [merge]
 	tool = vimdiff
 [mergetool]
