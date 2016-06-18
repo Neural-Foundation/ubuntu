@@ -23,6 +23,7 @@ NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'thisivan/vim-taglist'
 NeoBundle 'clones/vim-genutils'
 NeoBundle 'mattn/gist-vim', {'depends': 'mattn/webapi-vim'}
+NeoBundle 'tpope/vim-haml'
 " 实现在代码中的跳转，从函数调用的地方，直接跳转到函数的定义。默认的命令是：gd
 " NeoBundle 'dgryski/vim-godef'
 " 实现Golang的代码自动补全
@@ -32,6 +33,19 @@ NeoBundle 'majutsushi/tagbar'
 " 整套的 Golang Vim 开发配置
 NeoBundle 'fatih/vim-go'
 NeoBundle 'xuender/vim-template'
+" typescript
+NeoBundle 'Shougo/vimproc.vim', { 
+\ 'build' : { 
+\     'windows' : 'tools\\update-dll-mingw', 
+\     'cygwin' : 'make -f make_cygwin.mak', 
+\     'mac' : 'make -f make_mac.mak', 
+\     'linux' : 'make', 
+\     'unix' : 'gmake', 
+\    }, 
+\ } 
+NeoBundle 'Quramy/tsuquyomi' 
+NeoBundle 'leafgarland/typescript-vim' 
+
 NeoBundleCheck
 
 filetype off
@@ -510,6 +524,7 @@ let html_use_css = 1
 let html_number_lines = 0
 let use_xhtml = 1
 
+
 """"""""""""""""""""""""""""""
 " Ruby & PHP section
 """"""""""""""""""""""""""""""
@@ -527,7 +542,7 @@ autocmd FileType python map <buffer> <leader><space> :w!<cr>:!python %<cr>
 "autocmd FileType python so ~/vim_local/plugin/python_fold.vim
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete  
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags  
+"autocmd FileType html set omnifunc=htmlcomplete#CompleteTags  
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS  
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags  
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP  

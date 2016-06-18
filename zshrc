@@ -7,6 +7,7 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
 ZSH_THEME="jonathan"
+#ZSH_THEME="aussiegeek"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -41,7 +42,7 @@ ZSH_THEME="jonathan"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git zsh_reload gulp sudo colored-man)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.gvm/scripts/gvm
@@ -58,6 +59,7 @@ alias ee='emacsclient -t'
 alias dstat='dstat -cdlmnpsy'
 alias rscp='rsync -v -P -e ssh'
 alias b='byobu'
+alias t='tmux'
 alias p='ping 192.168.1.1'
 alias e='exit'
 
@@ -76,14 +78,16 @@ compinit
 . ~/.nvm/nvm.sh
 
 echo 'run byobu(b)'
+echo 'run tmux(t)'
 echo 'p=ping 192.168.1.1'
 echo 'e=exit'
 
 export JAVA_HOME=/usr/lib/jvm/java-7-oracle
 
-export MIGRATIONS_HOME=/home/ender/work/mybatis-migrations-3.1.0
-export MIGRATIONS=$MIGRATIONS_HOME/bin
+#export MIGRATIONS_HOME=/home/ender/work/mybatis-migrations-3.1.0
+#export MIGRATIONS=$MIGRATIONS_HOME/bin
 export ANDROID_HOME=/home/ender/utils/android_sdk
+export ANDROID_SDK_HOME=/home/ender/utils/android_sdk
 export PHANTOMJS_BIN=/home/ender/.nvm/v0.10.26/bin/phantomjs
 export GRADLE_HOME=/home/ender/utils/gradle-1.11
 export PATH=$GRADLE_HOME/bin:$MIGRATIONS:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
