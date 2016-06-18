@@ -80,8 +80,9 @@ set ruler
 set nu
 " 高亮当前行
 set cursorline
-hi cursorline guibg=#333333
-hi CursorColumn guibg=#333333
+hi CursorLine cterm=NONE ctermbg=24 guibg=24
+"hi cursorline guibg=#ff00ff
+" hi CursorColumn guibg=#dddd33
 " 菜单颜色
 hi Pmenu guibg=#333333
 hi PmenuSel guibg=#555555 guifg=#ffffff
