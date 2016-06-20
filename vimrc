@@ -164,6 +164,8 @@ map <F2> :tabn<CR>
 map <F4> :tabclose<CR>
 " 保存session
 map <F12> :mksession!<CR>
+" 关闭buffer
+map <leader>c :bdelete<CR>
 try
   set switchbuf=usetab
   set stal=2
