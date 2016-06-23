@@ -1,0 +1,13 @@
+" 自动读取文件变化
+set autoread
+" 保存.vimrc 是自动装载
+autocmd! bufwritepost .vimrc.local source ~/.vimrc
+" 快速保存
+nmap <leader>w :w!<cr>
+nmap <leader>f :find<cr>
+" 打开左侧文件树
+map <leader>d :NERDTree<CR>
+" 改变缓冲文件
+map <right> :bn<cr>
+map <left> :bp<cr>
+
