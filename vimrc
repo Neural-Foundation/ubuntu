@@ -13,8 +13,9 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " 左侧文件树
 NeoBundle 'scrooloose/nerdtree'
-" 主体式样
-NeoBundle 'tomasr/molokai'
+" 主题式样
+" NeoBundle 'tomasr/molokai'
+NeoBundle 'altercation/vim-colors-solarized'
 " 文件查找
 NeoBundle 'kien/ctrlp.vim'
 " 状态栏
@@ -24,7 +25,10 @@ NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'tpope/vim-ragtag'
 " 补全
 NeoBundle 'thisivan/vim-taglist'
-NeoBundle 'Shougo/neocomplete.vim'
+" 自动补全
+NeoBundle 'Valloric/YouCompleteMe'
+" 代码检查
+NeoBundle 'scrooloose/syntastic'
 " 右窗口
 NeoBundle 'majutsushi/tagbar'
 " 整套的 Golang Vim 开发配置
@@ -59,11 +63,13 @@ syntax enable
 syntax on
 set t_Co=256
 set background=dark
+" set background=light
 "配色方案
-" color desert
-colorscheme molokai
+" colorscheme molokai
+" colorscheme solarized
 let g:molokai_original = 1
 let g:rehash256 = 1
+let g:solarized_termcolors=256
 " 设置字体 Monaco 10pt
 set gfn=Monospace\ 11
 " 三键鼠标
@@ -80,8 +86,8 @@ set ruler
 set nu
 " 高亮当前行
 set cursorline
-hi CursorLine cterm=NONE ctermbg=17 guibg=17
-"hi cursorline guibg=#ff00ff
+" hi CursorLine cterm=NONE ctermbg=17 guibg=17
+" hi cursorline guibg=#ff00ff
 " hi CursorColumn guibg=#dddd33
 " 菜单颜色
 hi Pmenu guibg=#333333
@@ -135,6 +141,10 @@ set helplang=cn
 set termencoding=utf-8
 set fileencodings=utf-8,gb18030,gbk,gb2312,big5
 set fileformats=unix
+" 自动备份关闭
+set nobackup
+set nowb
+set noswapfile
 autocmd BufEnter * :syntax sync fromstart
 " 总显示最后一个窗口的状态行
 set laststatus=2
@@ -155,6 +165,10 @@ map <leader>d :NERDTree<CR>
 let g:tagbar_width=35
 let g:tagbar_autofocus=1
 nmap <leader>t :TagbarToggle<CR>
+" taglist可以同时展示一个文件的函数列表
+let Tlist_Show_One_File=1
+" 当taglist是最后一个分割窗口时，自动退出vim
+let Tlist_Exit_OnlyWindow=1
 " 标签配制
 " 新标签
 map <F3> :tabnew<CR>
@@ -222,19 +236,7 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 " 改变缓冲文件
 map <right> :bn<cr>
 map <left> :bp<cr>
- " 关闭状态显示空白符号计数,这个对我用处不大"
+" 关闭状态显示空白符号计数,这个对我用处不大"
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#whitespace#symbol = '!'
-" 开启自动补全
-let g:neocomplete#enable_at_startup = 1
-" 智能大小写
-let g:neocomplete#enable_smart_case = 1
-" <TAB>: 补全
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-" Enable omni completion.
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType typescript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
