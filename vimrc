@@ -239,3 +239,6 @@ map <left> :bp<cr>
 " 关闭状态显示空白符号计数,这个对我用处不大"
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#whitespace#symbol = '!'
+" typescript 代码检查
+let g:syntastic_typescript_checks=['tsc', 'tslint']
+let g:syntastic_typescript_tsc_fname = ''
