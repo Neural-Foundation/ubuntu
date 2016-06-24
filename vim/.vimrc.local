@@ -2,12 +2,66 @@
 set autoread
 " 保存.vimrc 是自动装载
 autocmd! bufwritepost .vimrc.local source ~/.vimrc
+" 自动备份关闭
+set nobackup
+set nowb
+set noswapfile
+autocmd BufEnter * :syntax sync fromstart
 " 快速保存
 nmap <leader>w :w!<cr>
 nmap <leader>f :find<cr>
 " 打开左侧文件树
 map <leader>d :NERDTree<CR>
+let NERDTreeShowBookmarks=0
+let NERDTreeQuitOnOpen=0
 " 改变缓冲文件
 map <right> :bn<cr>
 map <left> :bp<cr>
 
+"set shiftwidth=2                " Use indents of 4 spaces
+"set expandtab                   " Tabs are spaces, not tabs
+"set tabstop=2                   " An indentation every four columns
+"set softtabstop=2               " Let backspace delete indent
+
+" tagbar 支持 typescript
+let g:tagbar_type_typescript = {
+  \ 'ctagstype': 'typescript',
+  \ 'kinds': [
+    \ 'c:classes',
+    \ 'n:modules',
+    \ 'f:functions',
+    \ 'v:variables',
+    \ 'v:varlambdas',
+    \ 'm:members',
+    \ 'i:interfaces',
+    \ 'e:enums',
+  \ ]
+\ }
+" tagbar 支持 Golang
+let g:tagbar_type_go = {
+    \ 'ctagstype' : 'go',
+    \ 'kinds'     : [
+        \ 'p:package',
+        \ 'i:imports:1',
+        \ 'c:constants',
+        \ 'v:variables',
+        \ 't:types',
+        \ 'n:interfaces',
+        \ 'w:fields',
+        \ 'e:embedded',
+        \ 'm:methods',
+        \ 'r:constructor',
+        \ 'f:functions'
+    \ ],
+    \ 'sro' : '.',
+    \ 'kind2scope' : {
+        \ 't' : 'ctype',
+        \ 'n' : 'ntype'
+    \ },
+    \ 'scope2kind' : {
+        \ 'ctype' : 't',
+        \ 'ntype' : 'n'
+    \ },
+    \ 'ctagsbin'  : 'gotags',
+    \ 'ctagsargs' : '-sort -silent'
+\ }
