@@ -43,6 +43,22 @@ if !exists("g:ycm_semantic_triggers")
   let g:ycm_semantic_triggers = {}
 endif
 let g:ycm_semantic_triggers['typescript'] = ['.']
+" typescript 代码检查
+" let g:syntastic_typescript_checks=['tslint']
+let g:syntastic_typescript_checks=['tsc', 'tslint']
+let g:syntastic_typescript_checkers=['tslint']
+" typescript: find tsconfig.json
+function! FindTypescriptRoot()
+    return fnamemodify(findfile('tsconfig.json', './;'), ':h')
+endfunction
+
+let g:syntastic_typescript_tsc_args=['-p', FindTypescriptRoot()]
+"let g:syntastic_typescript_checks=['tslint']
+"let g:loaded_syntastic_typescript_tsc_checker=1
+let g:syntastic_typescript_tsc_fname=''
+let g:typescript_indent_disable = 1
+"let g:syntastic_ignore_files=[".*\.ts$"]
+
 " tagbar 支持 Golang
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',
@@ -71,3 +87,4 @@ let g:tagbar_type_go = {
     \ 'ctagsbin'  : 'gotags',
     \ 'ctagsargs' : '-sort -silent'
 \ }
+

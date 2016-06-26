@@ -6,17 +6,3 @@ let g:airline_powerline_fonts=1
 " 状态栏打开tabline功能,方便查看Buffer和切换
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#buffer_nr_show=1
-" typescript 代码检查
-let g:syntastic_typescript_checks=['tslint']
-" typescript: find tsconfig.json
-function! FindTypescriptRoot()
-    return fnamemodify(findfile('tsconfig.json', './;'), ':h')
-endfunction
-
-let g:syntastic_typescript_tsc_args=['-p', FindTypescriptRoot()]
-"let g:syntastic_typescript_checks=['tslint']
-"let g:loaded_syntastic_typescript_tsc_checker=1
-let g:syntastic_typescript_tsc_fname=''
-let g:typescript_indent_disable = 1
-"let g:syntastic_ignore_files=[".*\.ts$"]
-
