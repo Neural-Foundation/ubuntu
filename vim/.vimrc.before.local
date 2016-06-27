@@ -6,7 +6,3 @@ let g:airline_powerline_fonts=1
 " 状态栏打开tabline功能,方便查看Buffer和切换
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#buffer_nr_show=1
-" typescript 代码检查
-let g:syntastic_typescript_checks=['tsc', 'tslint']
-let g:syntastic_typescript_tsc_fname=''
-
