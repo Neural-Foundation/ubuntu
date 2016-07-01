@@ -125,7 +125,7 @@ export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 #export MIGRATIONS=$MIGRATIONS_HOME/bin
 export ANDROID_HOME=/home/ender/utils/android_sdk
 export ANDROID_SDK_HOME=/home/ender/utils/android_sdk
-export PHANTOMJS_BIN=/home/ender/.nvm/v0.10.26/bin/phantomjs
+export PHANTOMJS_BIN=/home/ender/.nvm/versions/node/v6.2.2/bin/phantomjs
 export GRADLE_HOME=/home/ender/utils/gradle-1.11
 export PATH=$GRADLE_HOME/bin:$MIGRATIONS:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 
