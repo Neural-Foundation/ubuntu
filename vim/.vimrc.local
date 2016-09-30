@@ -27,6 +27,8 @@ let NERDTreeQuitOnOpen=0
 " 改变缓冲文件
 map <right> :bn<cr>
 map <left> :bp<cr>
+" 自动换行
+set  wrap
 
 "set shiftwidth=2                " Use indents of 4 spaces
 "set expandtab                   " Tabs are spaces, not tabs
