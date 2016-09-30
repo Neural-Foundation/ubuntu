@@ -125,16 +125,11 @@ export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 #export MIGRATIONS=$MIGRATIONS_HOME/bin
 export ANDROID_HOME=/home/ender/utils/android_sdk
 export ANDROID_SDK_HOME=/home/ender/utils/android_sdk
-export PHANTOMJS_BIN=/home/ender/.nvm/versions/node/v6.2.2/bin/phantomjs
+export PHANTOMJS_BIN=/home/ender/.nvm/versions/node/v6.2.0/bin/phantomjs
 export GRADLE_HOME=/home/ender/utils/gradle-1.11
 export PATH=$GRADLE_HOME/bin:$MIGRATIONS:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 
 export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/dist
-
-
-# tabtab source for yo package
-# uninstall by removing these lines or running `tabtab uninstall yo`
-[[ -f /home/ender/.nvm/versions/node/v5.7.0/lib/node_modules/.yo_npminstall/tabtab/1.3.2/tabtab/.completions/yo.zsh ]] && . /home/ender/.nvm/versions/node/v5.7.0/lib/node_modules/.yo_npminstall/tabtab/1.3.2/tabtab/.completions/yo.zsh
 
 # 颜色
 # export TERM="screen-256color"
