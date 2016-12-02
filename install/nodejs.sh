@@ -14,12 +14,12 @@ sudo apt-get install libssl-dev
 git clone git://github.com/creationix/nvm.git ~/.nvm
 #echo ". ~/.nvm/nvm.sh" >> ~/.zshrc
 ~/.nvm/nvm.sh
-nvm install v0.10.23
+# nvm install v0.10.23
 # 设置默认版本
-nvm alias default v0.10.23
+# nvm alias default v0.10.23
 # 任务管理 grunt
-npm i -g grunt-cli
+# npm i -g grunt-cli
 # coffee
-npm i -g coffee-script
+# npm i -g coffee-script
 # bower
-npm i -g bower
+# npm i -g bower

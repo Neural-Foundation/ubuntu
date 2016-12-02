@@ -10,16 +10,6 @@ autocmd BufEnter * :syntax sync fromstart
 " 快速保存
 nmap <leader>w :w!<cr>
 nmap <leader>f :find<cr>
-" 新标签
-map <F3> :tabnew<CR>
-" 上个标签
-map <F2> :tabn<CR>
-" 关闭标签
-map <F4> :tabclose<CR>
-" 保存session
-map <F12> :mksession!<CR>
-" 关闭buffer
-map <leader>c :bdelete<CR>
 " 打开左侧文件树
 map <leader>d :NERDTree<CR>
 let NERDTreeShowBookmarks=0
@@ -27,8 +17,6 @@ let NERDTreeQuitOnOpen=0
 " 改变缓冲文件
 map <right> :bn<cr>
 map <left> :bp<cr>
-" 自动换行
-set  wrap
 
 "set shiftwidth=2                " Use indents of 4 spaces
 "set expandtab                   " Tabs are spaces, not tabs
