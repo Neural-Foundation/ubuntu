@@ -38,6 +38,7 @@ let g:tagbar_type_typescript = {
   \ ]
 \ }
 " typescript 自动导入
+let g:tsuquyomi_single_quote_import = 1
 map <leader>i :TsuImport<CR>
 if !exists("g:ycm_semantic_triggers")
   let g:ycm_semantic_triggers = {}
