@@ -18,10 +18,10 @@ let NERDTreeQuitOnOpen=0
 map <right> :bn<cr>
 map <left> :bp<cr>
 
-"set shiftwidth=2                " Use indents of 4 spaces
-"set expandtab                   " Tabs are spaces, not tabs
-"set tabstop=2                   " An indentation every four columns
-"set softtabstop=2               " Let backspace delete indent
+set shiftwidth=4
+set noet
+set tabstop=4
+set softtabstop=4
 
 " tagbar 支持 typescript
 let g:tagbar_type_typescript = {
