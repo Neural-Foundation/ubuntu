@@ -18,10 +18,18 @@ let NERDTreeQuitOnOpen=0
 map <right> :bn<cr>
 map <left> :bp<cr>
 
+" 缩进
 set shiftwidth=4
 set noet
 set tabstop=4
 set softtabstop=4
+" 禁止拼写检查
+set nospell
+" 制表符颜色
+let g:indent_guides_start_level = 1
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#262626 ctermbg=234
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#1c1c1c ctermbg=236
 
 " tagbar 支持 typescript
 let g:tagbar_type_typescript = {
