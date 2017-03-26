@@ -8,3 +8,6 @@
 
 
 bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+
+go get -u github.com/jstemmer/gotags
+go get -u github.com/golang/lint/golint
