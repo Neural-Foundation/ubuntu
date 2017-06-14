@@ -1,0 +1,3 @@
+# Insert your preferred key mappings here.
+map v scrollFullPageDown
+map ,,j LinkHints.activateMode

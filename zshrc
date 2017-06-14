@@ -141,3 +141,7 @@ export CHROME_BIN=/usr/bin/chromium-browser
 # export TERM="screen-256color"
 export TERM=xterm-256color
 alias tmux="tmux -2"
+# GPU 计算
+export CUDA_HOME=/usr/local/cuda-8.0
+export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
