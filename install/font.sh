@@ -7,5 +7,14 @@
 #
 
 
-cd /tmp
-wget http://www.intellij.org.cn/downloads/YaHei.Consolas.1.12.zip
+# cd /tmp
+# wget http://www.intellij.org.cn/downloads/YaHei.Consolas.1.12.zip
+
+# clone
+git clone https://github.com/powerline/fonts.git
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
