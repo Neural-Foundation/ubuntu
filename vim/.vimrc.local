@@ -19,6 +19,8 @@ map <right> :bn<cr>
 map <left> :bp<cr>
 " 导航
 nmap <leader>l :TagbarToggle<cr>
+" 代码测试覆盖
+nmap <leader>c :GoCoverage<cr>
 
 " 缩进
 set shiftwidth=4
