@@ -17,6 +17,8 @@ let NERDTreeQuitOnOpen=0
 " 改变缓冲文件
 map <right> :bn<cr>
 map <left> :bp<cr>
+" 导航
+nmap <leader>l :TagbarToggle<cr>
 
 " 缩进
 set shiftwidth=4
