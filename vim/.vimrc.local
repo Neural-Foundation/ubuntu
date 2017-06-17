@@ -11,7 +11,7 @@ autocmd BufEnter * :syntax sync fromstart
 nmap <leader>w :w!<cr>
 nmap <leader>f :find<cr>
 " 打开左侧文件树
-map <leader>d :NERDTree<CR>
+map <leader>d :NERDTreeToggle<CR>
 let NERDTreeShowBookmarks=0
 let NERDTreeQuitOnOpen=0
 " 改变缓冲文件
@@ -20,7 +20,7 @@ map <left> :bp<cr>
 " 导航
 nmap <leader>l :TagbarToggle<cr>
 " 代码测试覆盖
-nmap <leader>c :GoCoverage<cr>
+nmap <leader>c :GoCoverageToggle<cr>
 
 " 缩进
 set shiftwidth=4
