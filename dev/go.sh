@@ -1,4 +1,3 @@
-go get -u github.com/gpmgo/gopm
 go get github.com/smartystreets/goconvey/convey
 go get github.com/alecthomas/gometalinter
 
