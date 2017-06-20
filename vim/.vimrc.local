@@ -24,13 +24,16 @@ au FileType go nmap <leader>c :GoCoverageToggle<cr>
 au FileType go nmap <Leader>e <Plug>(go-rename)
 " tab 补全
 " YCM settings
-let g:ycm_key_list_select_completion = ['', '']
-let g:ycm_key_list_previous_completion = ['']
+
+let g:ycm_key_list_select_completion = ['<Down>']
+let g:ycm_key_list_previous_completion = ['<Up>']
 let g:ycm_key_invoke_completion = '<C-Space>'
+
 " UltiSnips setting
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsEditSplit="vertical"
 
 " 缩进
 set shiftwidth=4
