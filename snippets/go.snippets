@@ -1,0 +1,9 @@
+snippet tc "Test case"
+func Test${1:name}(t *testing.T) {
+	Convey("$1", t, func() {
+		So(${2}, ShouldEqual, ${3})
+		${0}
+	})
+}
+endsnippet
+
