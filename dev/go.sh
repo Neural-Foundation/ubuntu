@@ -1,4 +1,5 @@
 sudo apt install curl git mercurial make binutils bison gcc build-essential
+sudo apt install gogoprotobuf
 go get github.com/smartystreets/goconvey
 
 go get github.com/nsf/gocode

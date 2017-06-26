@@ -25,3 +25,6 @@ sudo pip install psycopy2
 #sudo pip install slimit
 # 压缩html css
 #sudo pip install slimmer
+
+# 代码格式化
+sudo apt install python-autopep8
