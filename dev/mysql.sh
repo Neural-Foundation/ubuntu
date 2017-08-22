@@ -7,6 +7,6 @@
 #
 
 
-sudo apt-get build-dep python-mysqldb
+sudo apt build-dep python-mysqldb
 sudo pip install MySQL-python
 

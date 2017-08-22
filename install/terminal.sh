@@ -1,1 +1,1 @@
-sudo apt-get install tilda
+sudo apt install tilda

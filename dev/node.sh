@@ -12,5 +12,5 @@ npm install -g karma-cli
 # 代码格式化
 cnpm install -g js-beautify
 cnpm install -g typescript-formatter
-sudo apt-get install tidy
+sudo apt install tidy
 cnpm install -g remark-cli

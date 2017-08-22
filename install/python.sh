@@ -7,8 +7,8 @@
 #
 
 
-sudo aptitude install -y ipython
-sudo aptitude install -y python-pip
+sudo apt install -y ipython
+sudo apt install -y python-pip
 sudo pip install bencode
 sudo pip install watchdog
 sudo pip install sh

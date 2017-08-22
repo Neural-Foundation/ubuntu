@@ -3,4 +3,4 @@
 # 增加软件仓库
 sudo add-apt-repository ppa:tualatrix/ppa
 # 安装器
-sudo apt-get update && sudo apt-get install ubuntu-tweak
+sudo apt update && sudo apt install ubuntu-tweak

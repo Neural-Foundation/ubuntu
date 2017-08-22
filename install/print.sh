@@ -7,4 +7,4 @@
 #
 
 # 虚拟打印器
-sudo aptitude install cups-pdf
+sudo apt install cups-pdf

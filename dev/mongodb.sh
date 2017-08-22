@@ -6,4 +6,4 @@
 # Distributed under terms of the MIT license.
 #
 
-sudo apt-get install mongodb
+sudo apt install mongodb

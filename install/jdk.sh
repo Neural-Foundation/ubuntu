@@ -9,7 +9,7 @@
 # 增加软件仓库
 sudo add-apt-repository ppa:webupd8team/java
 # jdk8安装器
-sudo apt-get update && sudo apt-get install oracle-jdk8-installer
+sudo apt update && sudo apt install oracle-jdk8-installer
 # 设置默认JVM选择
 sudo update-alternatives --display java
 # 选择JVM

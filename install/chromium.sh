@@ -7,7 +7,7 @@
 #
 
 
-sudo apt-get install chromium-browser
-sudo apt-get install pepperflashplugin-nonfree
+sudo apt install chromium-browser
+sudo apt install pepperflashplugin-nonfree
 sudo update-pepperflashplugin-nonfree --install
 

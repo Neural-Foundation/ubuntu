@@ -6,8 +6,8 @@
 # Distributed under terms of the MIT license.
 #
 #!/bin/bash
-sudo aptitude install -y indicator-multiload vim-gnome retext zim virtualbox-qt
+sudo apt install -y indicator-multiload vim-gnome retext zim virtualbox-qt
 # 截屏
-sudo aptitude install -y shutter libgoo-canvas-perl
-sudo aptitude install -y filezilla
-#sudo aptitude install -y unrar
+sudo apt install -y shutter libgoo-canvas-perl
+sudo apt install -y filezilla
+#sudo apt install -y unrar
