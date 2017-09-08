@@ -9,7 +9,10 @@ if [ ! "$2" ] ;then
 	echo "请输入查找内容"
 	exit
 fi
+endColour="\033[0m\e[0m"
+redColour="\e[0;31m\033[1m"
+purpleColour="\033[35m"
 
-echo -e "查找扩展文件名: \033[35m"$1"\033[0m"
-echo -e "查找内容: \033[31m"$2"\033[0m"
-find ./ -name "*."$1 | xargs grep $2 --colour
+echo -e "查找扩展文件名: $purpleColour$1$endColour"
+echo -e "查找内容: $redColour$2$endColour"
+find ./ -name "*."$1 | xargs grep $2 --colour=auto
