@@ -19,4 +19,4 @@ purpleColour="\033[35m"
 
 echo -e "查找扩展文件名: $purpleColour$1$endColour"
 echo -e "查找内容: $redColour$2$endColour"
-find ./ -name "*."$1 | xargs grep $2 --colour=auto
+find ./ -name "*.$1" | xargs grep $2 --colour=auto
