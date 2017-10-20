@@ -1,4 +1,3 @@
-sudo apt install -y apt
 # sudo apt install -y postgresql pgadmin3 python-pip pylint
 sudo apt install -y curl openssl libssl-dev openssh-server
 sudo apt install -y build-essential python-dev
