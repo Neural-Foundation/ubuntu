@@ -25,7 +25,6 @@ au FileType go nmap <Leader>e <Plug>(go-rename)
 
 " tab 补全
 " YCM settings
-
 let g:ycm_key_list_select_completion = ['<Down>']
 let g:ycm_key_list_previous_completion = ['<Up>']
 let g:ycm_key_invoke_completion = '<C-Space>'
@@ -121,3 +120,9 @@ let g:tagbar_type_go = {
 \ }
 
 au FileType xhtml,xml so ~/.vim/bundle/HTML-AutoCloseTag/ftplugin/html_autoclosetag.vim
+" autocmd FileType vue syntax sync fromstart
+" autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
+
+" 代码折叠
+set foldmethod=syntax
+set foldlevel=1

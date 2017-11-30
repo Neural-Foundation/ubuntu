@@ -120,6 +120,7 @@ echo 'p=ping 192.168.1.1'
 echo 'e=exit'
 
 export JAVA_HOME=/usr/lib/jvm/java-8-oracle
+export INSTALL4J_JAVA_HOME_OVERRIDE=/usr/lib/jvm/java-8-oracle
 
 #export MIGRATIONS_HOME=/home/ender/work/mybatis-migrations-3.1.0
 #export MIGRATIONS=$MIGRATIONS_HOME/bin
